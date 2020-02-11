@@ -5,29 +5,24 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Bird
+public class Bird implements Flier
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Bird
-     */
-    public Bird()
+    private String firstName;
+    private String lastName;
+    
+    public Bird(String myFirstName, String myLastName)
     {
-        // initialise instance variables
-        x = 0;
+        firstName = myFirstName;
+        lastName = myLastName;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    public void fly()
     {
-        // put your code here
-        return x + y;
+        System.out.println("Using feathered wings to soar in the air!");
+    }
+    
+    public void findHome()
+    {
+        System.out.println("Fly around looking for home");
     }
 }
